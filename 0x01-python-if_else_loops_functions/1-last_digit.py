@@ -9,7 +9,7 @@ num = number % 10
 if number >  0:
     if num > 5:
         print(strg.format(number, num) + ' ' + strg2)
-    elif num < 6 and number != 0:
+    elif num < 6:
         print(strg.format(number, num) + ' ' + strg3)
     elif number == 0:
         print("Last digit of 0 is 0 and is 0")
@@ -21,4 +21,3 @@ else:
     num = num * -1
     number = number * -1
     print(strg.format(number, num) + ' ' + strg3)
-
