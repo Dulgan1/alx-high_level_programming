@@ -12,5 +12,5 @@ if number >  0:
 else:
     number = number * (-1)
     num = number % 10
-    print("Last digit of {0} is {1} and is less than 6 and not zero".format(number, num))
+    print("Last digit of -{0} is -{1} and is less than 6 and not zero".format(number, num))
 
