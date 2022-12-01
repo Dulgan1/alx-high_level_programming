@@ -6,10 +6,10 @@ strg2 = "and is greater than 5"
 strg3 = "and is less than 6 and not 0"
 
 num = number % 10
-if number >  0:
+if number > 1:
     if num > 5:
         print(strg.format(number, num) + ' ' + strg2)
-    elif num < 6:
+    elif (num < 6) and (number != 0):
         print(strg.format(number, num) + ' ' + strg3)
     elif number == 0:
         print("Last digit of 0 is 0 and is 0")
