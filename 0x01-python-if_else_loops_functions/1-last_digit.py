@@ -11,12 +11,14 @@ if number >  0:
         print(strg.format(number, num) + ' ' + strg2)
     elif num < 6 and num != 0:
         print(strg.format(number, num) + ' ' + strg3)
-    else:
+    elif number == 0:
         print("Last digit of 0 is 0 and is 0")
+    else:
+        number *= 1
 else:
-    number = number * -1
+    number *= -1
     num = number % 10
-    num = num * -1
-    number = number * -1
+    num *= -1
+    number *= -1
     print(strg.format(number, num) + ' ' + strg3)
 
