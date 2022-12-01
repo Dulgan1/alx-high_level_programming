@@ -15,7 +15,7 @@ elif number == 0:
     print("Last digit of 0 is 0 and is 0")
 #else:
 #    print("{}".format(number))
-elif number < 0::
+elif number < 0:
     number = number * -1
     num = number % 10
     num = num * -1
