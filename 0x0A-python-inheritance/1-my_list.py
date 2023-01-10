@@ -8,7 +8,8 @@ inherits from list
 """
 
 class MyList(list):
-    """inherits from class list
+    """
+    inherits from class list
     methods:
     print_sorted(self)
     """
