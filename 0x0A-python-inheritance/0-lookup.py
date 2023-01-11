@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""
-Module 0-lookup
+"""Module 0-lookup
 
 Contains method lookup that get list of attributes or methods of an object
 """
