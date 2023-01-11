@@ -3,9 +3,9 @@
 Module 1-my_list
 
 Contains class MyList
-
 inherits from list
 """
+
 
 class MyList(list):
     """
