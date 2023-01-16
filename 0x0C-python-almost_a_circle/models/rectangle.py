@@ -80,15 +80,27 @@ class Rectangle(Base):
         """sets value to __width"""
         if type(value) is not int:
             raise TypeError("width must be integer")
-        if value < 0:
+        if value <= 0:
             raise ValueError("width must be > 0")
         self.__width = value
 
     @height.setter
-    def height(self, value)
+    def height(self, value):
         """sets value to __height"""
         if type(value) is not int:
             raise TypeError("height must be integer")
-        if type(value) is not int:
+        if value <= 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
+    def area(self):
+        """returns area of rectangle"""
+        return self.__width * self.__height
+
+    def display(self):
+        for i in range(0, self.__height):
+            for i in range(0, self.__width):
+                if i != self.__width - 1:
+                    print("#", end="")
+                else:
+                    print("#")
