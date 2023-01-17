@@ -10,7 +10,7 @@ Objects data is saved to dictionary
 """
 
 
-from model.rectangle import Rectangle
+from models.rectangle import Rectangle
 
 
 class Square:
