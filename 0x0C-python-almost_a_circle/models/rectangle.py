@@ -3,6 +3,11 @@
 Modeule contains class Rectangle
 
 Inherits from class Base from model.base
+Displays class object in #s
+Converts class data to dictionary
+Overloads __str__ method
+Updates objects attributes
+Returns area of object Rectangle
 """
 
 
@@ -98,6 +103,7 @@ class Rectangle(Base):
         return self.__width * self.__height
 
     def display(self):
+        """Displays the representation of class with #'s"""
         print("\n" * self.__y)
         for i in range(0, self.__height):
             print(" " * self.__x)
@@ -113,3 +119,40 @@ class Rectangle(Base):
         s_str = "{:d}/{:d} -".format(self.__x, self.__y)
         t_str = "{:d}/{:d}".format(self.__width, self.__height)
         return f_str + " " + s_str + " " + t_str
+
+    def update(self, *args, **kwargs):
+        """updates object attributes"""
+        if args:
+            for k, v in enumerate(args):
+                if k == 0:
+                    self.id = v
+                elif k == 1:
+                    self.__width = v
+                elif k == 2:
+                    self.__height = v
+                elif k == 3:
+                    self.__x = v
+                else:
+                    self.__y = v
+
+        else:
+            if "id" in kwargs:
+                self.id = kwargs["id"]
+            if "width" in kwargs:
+                self.__width = kwargs["width"]
+            if "height" in kwargs:
+                self.__height = kwargs["height"]
+            if "x" in kwargs:
+                self.__x = kwargs["x"]
+            if "y" in kwargs:
+                self.__y = kwargs["y"]
+
+    def to_dictionary(self):
+        """Returns dictionary representation of class"""
+        d = {}
+        d["id"] = self.id
+        d["width"] = self.width
+        d["height"] = self.height
+        d["x"] = self.x
+        d["y"] = self.y
+        return d

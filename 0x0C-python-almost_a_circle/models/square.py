@@ -3,6 +3,10 @@
 Module contains Square class
 
 Inherits from class Rectangle of model.rectangle
+Overloads __str__ method
+Returns area of object Square
+Updates objects attributes
+Objects data is saved to dictionary
 """
 
 
@@ -22,7 +26,7 @@ class Square:
     Also inherits methods of calss Rectangle
     """
 
-    def __init__(self, size, x=0, y=0, id=None)
+    def __init__(self, size, x=0, y=0, id=Nonei):
         """Initializing method"""
         super().__init__(size, size, x, y, id)
         self.size = size
