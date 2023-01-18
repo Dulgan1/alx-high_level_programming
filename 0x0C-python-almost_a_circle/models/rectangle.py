@@ -105,14 +105,22 @@ class Rectangle(Base):
 
     def display(self):
         """Displays the representation of class with #'s"""
-        print("\n" * self.__y)
-        for i in range(0, self.__height):
-            print(" " * self.__x)
-            for i in range(0, self.__width):
-                if i != self.__width - 1:
-                    print("#", end="")
-                else:
-                    print("#")
+        if self.__y and self.__x:
+            print("\n" * self.__y)
+            for n in range(0, self.__height):
+                print(" " * self.__x)
+                for n in range(0, self.__width):
+                    if n != self.__width - 1:
+                        print("#", end="")
+                    else:
+                        print("#")
+        else:
+            for n in range(0, self.__height):
+                for n in range(0, self.__width):
+                    if n != self.__width - 1:
+                        print("#", end="")
+                    else:
+                        print("#")
 
     def __str__(self):
         """Overrides the __str__ method"""
