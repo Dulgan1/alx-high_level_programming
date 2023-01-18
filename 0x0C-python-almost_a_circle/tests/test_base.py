@@ -17,12 +17,12 @@ Rectangle = rectangle.Rectangle
 
 
 class TestPep8(unittest.TestCase):
-    """Pep8 models/base.py & tests/test_models/test_base.py"""
+    """Pep8 models/base.py & tests/test_base.py"""
     def test_pep8(self):
         """Pep8"""
         style = pep8.StyleGuide(quiet=False)
         errors = 0
-        files = ["models/base.py", "tests/test_models/test_base.py"]
+        files = ["models/base.py", "tests/test_base.py"]
         errors += style.check_files(files).total_errors
         self.assertEqual(errors, 0, 'Need to fix Pep8')
 
