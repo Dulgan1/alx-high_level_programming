@@ -26,7 +26,7 @@ class Square:
     Also inherits methods of calss Rectangle
     """
 
-    def __init__(self, size, x=0, y=0, id=Nonei):
+    def __init__(self, size, x=0, y=0, id=None):
         """Initializing method"""
         super().__init__(size, size, x, y, id)
         self.size = size
