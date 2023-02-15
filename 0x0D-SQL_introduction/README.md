@@ -11,6 +11,7 @@ concepts of databases and structured query language (SQL) - PERSONAL STUDIES
 	Deletes/Removes a databse if it exists
 4. File 3
 	Lists tables in a database (mysql)
-
+5. File 5
+	Creates a table named first_table with attr id INT name VARCHAR(256)
 # Usage
 	cat [filename] | mysql -hlocalhost -uroot -p [database]
