@@ -16,6 +16,9 @@ concepts of databases and structured query language (SQL) - PERSONAL STUDIES.
 6. File 5
     Shows full deacription of a table, without using DESCRIBE [tablename].
 7. File 6
-    Lists all record of a table 
+    Lists all record of a table.
+8. File 7
+    Inserts new record to table of a database, defining columns.
+
 # Usage
 	cat [filename] | mysql -hlocalhost -uroot -p [database]
