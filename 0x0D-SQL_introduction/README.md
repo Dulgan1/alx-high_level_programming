@@ -15,5 +15,7 @@ concepts of databases and structured query language (SQL) - PERSONAL STUDIES.
 	Creates a table named first\_table with attr id INT name VARCHAR(256).
 6. File 5
     Shows full deacription of a table, without using DESCRIBE [tablename].
+7. File 6
+    Lists all record of a table 
 # Usage
 	cat [filename] | mysql -hlocalhost -uroot -p [database]
