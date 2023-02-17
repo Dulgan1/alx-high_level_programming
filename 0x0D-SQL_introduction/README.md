@@ -39,6 +39,8 @@ of databases and structured query language (SQL) - Basic Queries
 - **File 11**
     > Displays in order of scores and from score to name, the records that have score greater or equal to 10.
 
+- **File 12**
+    > Updates a record in second\_table, score of Bob.
 # Usage
 	cat [filename] | mysql -hlocalhost -uroot -p [database]
 
