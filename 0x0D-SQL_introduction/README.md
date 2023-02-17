@@ -41,6 +41,10 @@ of databases and structured query language (SQL) - Basic Queries
 
 - **File 12**
     > Updates a record in second\_table, score of Bob.
+
+- **File 13**
+    > Removes all records with score less or equal to 5.
+
 # Usage
 	cat [filename] | mysql -hlocalhost -uroot -p [database]
 
