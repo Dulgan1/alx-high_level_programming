@@ -53,7 +53,8 @@ of databases and structured query language (SQL) - Basic Queries
 
 - **File 16**
     > script that lists all records of the table second\_table of the database hbtn\_0c\_0 in your MySQL server. Don’t list rows without a name value. Results should display the score and the name (in this order). Records should be listed by descending score. The database name will be passed as an argument to the mysql command.
-
+- **File 100**
+    > Converts hbtn\_0c\_0 database to utf-8.
 # Usage
 `cat [filename] | mysql -hlocalhost -uroot -p [database]`
 
