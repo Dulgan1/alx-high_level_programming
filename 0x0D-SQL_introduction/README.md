@@ -1,7 +1,7 @@
 # SQL - Introduction
 
-This folder and each file illustrates basic understanding of 
-concepts of databases and structured query language (SQL) - PERSONAL STUDIES.
+This folder and each file in it, illustrates basic knowledge and understanding
+of databases and structured query language (SQL) - Basic Queries 
 
 - **File 0**
 	> Query to show all databases in a mysql server.
@@ -23,6 +23,11 @@ concepts of databases and structured query language (SQL) - PERSONAL STUDIES.
     > Shows number of records with same value (id = 89).
 - **File 9**
     > Creates a table, and adds records in a database.
-
+- **File 10**
+    > Displays score and name coloumns in the table second\_table in order of scores
 # Usage
-	`cat [filename] | mysql -hlocalhost -uroot -p [database]`
+	cat [filename] | mysql -hlocalhost -uroot -p [database]
+
+# Environment
+    - Ubuntu 20.04 LTS
+    - MySQL 8.0
