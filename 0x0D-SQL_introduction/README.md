@@ -19,6 +19,8 @@ concepts of databases and structured query language (SQL) - PERSONAL STUDIES.
     Lists all record of a table.
 8. File 7
     Inserts new record to table of a database, defining columns.
+9. File 8
+    Shows number of records with same value (id = 89).
 
 # Usage
 	cat [filename] | mysql -hlocalhost -uroot -p [database]
