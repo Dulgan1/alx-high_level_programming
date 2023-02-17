@@ -45,6 +45,8 @@ of databases and structured query language (SQL) - Basic Queries
 - **File 13**
     > Removes all records with score less or equal to 5.
 
+- **File 14**
+    > Computes the average score of all records and return in a new column average.
 # Usage
 	cat [filename] | mysql -hlocalhost -uroot -p [database]
 
