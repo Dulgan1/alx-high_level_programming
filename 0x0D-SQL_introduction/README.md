@@ -47,6 +47,9 @@ of databases and structured query language (SQL) - Basic Queries
 
 - **File 14**
     > Computes the average score of all records and return in a new column average.
+
+- **File 15**
+    > Displays records with same score in second\_table and also number of occurence
 # Usage
 `cat [filename] | mysql -hlocalhost -uroot -p [database]`
 
