@@ -48,7 +48,7 @@ of databases and structured query language (SQL) - Basic Queries
 - **File 14**
     > Computes the average score of all records and return in a new column average.
 # Usage
-	cat [filename] | mysql -hlocalhost -uroot -p [database]
+`cat [filename] | mysql -hlocalhost -uroot -p [database]`
 
 # Environment
     - Ubuntu 20.04 LTS
