@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const arg = process.argv[2];
-const x = + arg;
+const x =+ arg;
 if (!isNaN(x)) {
   console.log('My number: ' + x);
 } else {
