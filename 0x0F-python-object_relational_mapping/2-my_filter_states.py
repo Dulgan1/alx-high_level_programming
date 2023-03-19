@@ -14,7 +14,7 @@ if __name__ == "__main__":
 
     curs = db.cursor()
     curs.execute("""SELECT * FROM states
-                 WHERE name LIKE {:s} ORDER BY id ASC""".format(argv[4]))
+                 WHERE name LIKE '{:s}' ORDER BY id ASC""".format(argv[4]))
 
     for row in curs.fetchall():
         if row[1] == argv[4]:
