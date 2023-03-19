@@ -22,7 +22,7 @@ if __name__ == "__main__":
                  INNER JOIN cities ON states.id = cities.state_id
                  WHERE states.name LIKE '{:s}' 
                  ORDER BY cities.id ASC""".format(argv[4]))
-    print(", ".join(["{:s}".format(row[0]) for row in curs.fetchall()]))
+    print(', '.join(["{:s}".format(row[0]) for row in curs.fetchall()]))
 
     curs.close()
     db.close()
