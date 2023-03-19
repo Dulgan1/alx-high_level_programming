@@ -20,7 +20,7 @@ if __name__ == "__main__":
 
     curs.execute("""SELECT cities.name FROM states
                  INNER JOIN cities ON states.id = cities.state_id
-                 WHERE state.name LIKE '{:s}' 
+                 WHERE states.name LIKE '{:s}' 
                  ORDER BY cities.id ASC""".format(argv[4]))
     print(", ".join(["{:s}".format(row[0]) for row in curs.fetchall()]))
 
