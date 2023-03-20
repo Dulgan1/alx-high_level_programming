@@ -21,7 +21,7 @@ if __name__ == "__main__":
 
     Session = sessionmaker(bind=engine)
     session = Session()
-    instance = session.query(State).filter_by(name=argv[4]).order_by(State.id)
+    instance = session.query(State).filter_by(name=argv[4]).first()
 
     if instance:
         print("{:d}".format(instance.id))
