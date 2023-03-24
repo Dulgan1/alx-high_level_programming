@@ -1,7 +1,16 @@
 #!/usr/bin/python3
 """
-delete from table states with names containing letter 'a'
-parameters given to script: username, password, database
+Write a script that deletes all State objects with a name 
+                containing the letter a from the database hbtn_0e_6_usa
+
+Your script should take 3 arguments:
+                    mysql username, mysql password and database name
+You must use the module SQLAlchemy
+You must import State and Base from model_state -
+                            from model_state import Base, State
+Your script should connect to a MySQL server 
+                                running on localhost at port 3306
+Your code should not be executed when imported
 """
 
 from sys import argv
@@ -12,7 +21,6 @@ from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
 
-    # make engine for database
     user = argv[1]
     passwd = argv[2]
     db = argv[3]
@@ -22,7 +30,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    # find all appropriate states to be deleted
+
     states = session.query(State).filter(State.name.like('%a%')).all()
     for s in states:
         session.delete(s)
