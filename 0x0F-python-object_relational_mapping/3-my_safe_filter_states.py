@@ -17,7 +17,7 @@ if __name__ == "__main__":
                          passwd=argv[2], db=argv[3])
 
     curs = db.cursor()
-    curs.execute("""SELECT * FROM states WHERE name='%s'
+    curs.execute("""SELECT * FROM states WHERE name='{}'
                  ORDER BY id ASC""".format(argv[4]))
 
     for row in curs.fetchall():
