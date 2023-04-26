@@ -6,7 +6,7 @@ const file = process.argv[3];
 
 request(url, (err, response, body) => {
   if (err) {
-    console.log("error: " + err);
+    console.log('error: ' + err);
   } else {
     fs.writeFile(file, body, 'utf-8', (error) => {
       if (error) {
