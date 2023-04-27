@@ -3,7 +3,7 @@ const request = require('request');
 const url = process.argv[2];
 
 request(url, (error, response, body) => {
-  if error {
+  if (error) {
     console.log(error)
   } else {
     let task = JSON.parse(body);
