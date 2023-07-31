@@ -10,9 +10,9 @@ request(url, (error, response, body) => {
   } else if (response.statusCode === 200) {
     let movies = JSON.parse(body).results;
     for (let m in movies) {
-      let characters = movies.m.characters;
-      for (let c in characters) {
-        if (characters.c.includes('18')) {
+      let chars = movies.m.characters;
+      for (let c in chars) {
+        if (chars.c.includes('18')) {
           count++;
 	}
       }
