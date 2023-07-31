@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const url = process.argv[2]
+const url = process.argv[2];
 const request = require('request');
 const taskD = {};
 const list = [];
