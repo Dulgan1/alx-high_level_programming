@@ -8,7 +8,7 @@ const fs = require('fs');
 request(url, (error, response, body) => {
   if (error) {
     console.log(error);
-  } else if (reponse.statusCode === 200) {
+  } else if (response.statusCode === 200) {
     fs.writeFile(file, body, 'utf8');
   } else {
     console.log('Error: ' + response.statusCode);
