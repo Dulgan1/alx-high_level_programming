@@ -8,10 +8,10 @@ request(url, (error, response, body) => {
   if (error) {
     console.log(error);
   } else if (response.statusCode === 200) {
-    let movies = JSON.parse(body).results;
-    for (let m in movies) {
-      let characters = movies[m].characters;
-      for (let c in characters) {
+    const movies = JSON.parse(body).results;
+    for (const m in movies) {
+      const characters = movies[m].characters;
+      for (const c in characters) {
         if (characters[c].includes('18')) {
           count++;
 	}
