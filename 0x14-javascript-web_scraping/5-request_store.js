@@ -9,7 +9,9 @@ request(url, (error, response, body) => {
   if (error) {
     console.log(error);
   } else if (response.statusCode === 200) {
-    fs.writeFile(file, body, 'utf8');
+    fs.writeFile(file, body, 'utf8', (error) => {
+      console.log(error);
+    });
   } else {
     console.log('Error: ' + response.statusCode);
   }
