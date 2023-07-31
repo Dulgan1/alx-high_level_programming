@@ -13,9 +13,9 @@ request(url, function (err, response, body) {
       request(body.characters[i], function (err, response, body) {
         if (err) {
           console.log(err);
-	} else if (response.statusCode === 200) {
-	  console.log(JSON.parse(body).name);
-	}
+        } else if (response.statusCode === 200) {
+          console.log(JSON.parse(body).name);
+        }
       });
     }
   } else {
