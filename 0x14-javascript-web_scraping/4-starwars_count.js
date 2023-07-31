@@ -7,7 +7,7 @@ let count = 0;
 request(url, (error, response, body) => {
   if (error) {
     console.log(error);
-  } else if (reponse.statusCode === 200) {
+  } else if (response.statusCode === 200) {
     let movies = JSON.parse(body).results;
     for (let m in movies) {
       let characters = movies.m.characters;
