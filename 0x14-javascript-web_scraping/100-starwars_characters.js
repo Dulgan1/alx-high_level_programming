@@ -11,8 +11,8 @@ request(url, function (err, response, body) {
     body = JSON.parse(body);
     for (const i in body.characters) {
       request(body.characters[i], function (err, response, body) {
-	if (err) {
-	  console.log(err);
+        if (err) {
+          console.log(err);
 	} else if (response.statusCode === 200) {
 	  console.log(JSON.parse(body).name);
 	}
